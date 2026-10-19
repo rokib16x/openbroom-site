@@ -1,0 +1,41 @@
+/* OpenBroom design tokens. Source of truth for colour, type, radius and space.
+   The app's Theme.swift mirrors these values. */
+:root {
+  /* Brand */
+  --ob-ink: #12142b;          /* text, app-icon tile, "open" in the wordmark */
+  --ob-paper: #f7f5ef;        /* glyph on dark, warm white */
+  --ob-blue: #1f59e0;         /* default accent: primary buttons, links, "broom" */
+  --ob-blue-600: #1545c2;     /* hover / pressed */
+  --ob-blue-lift: #5b8dff;    /* accent on dark surfaces */
+
+  /* Neutrals (warm paper) */
+  --bg: #f6f5f1;
+  --sidebar: #efede6;
+  --surface: #ffffff;
+  --border: #e3e1da;
+  --text: #12142b;
+  --text-muted: #5a5f73;      /* 6:1 on white */
+  --text-faint: #8d91a3;      /* icons, hints only */
+
+  /* Safety labels: meaning never changes with the accent */
+  --safe: #1f8a5f;            --safe-100: #e1f3ea;
+  --check: #c27a12;           --check-100: #fbf0dc;
+  --yours: #7560cc;           --yours-100: #ece9f9;
+  --danger: #c23b2e;          --danger-100: #fbe8e5;
+
+  /* Accent choices (Settings > Accent) */
+  --accent-blue: #1f59e0;     --accent-indigo: #5b4bdb;   --accent-terracotta: #b0471a;
+  --accent-teal: #2f6f63;     --accent-melon: #d9503d;    --accent-graphite: #4a5466;
+  --accent-ink: #12142b;
+
+  /* Type: Plus Jakarta Sans. Headings 800, labels 600, body 500. Paths and commands in a monospace. */
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Shape and space: flat, one-pixel borders, almost no shadow */
+  --radius-control: 10px; --radius-card: 16px; --radius-pill: 999px;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-6: 24px; --space-8: 32px;
+  --shadow-card: 0 1px 2px rgb(18 20 43 / .04);
+  --shadow-float: 0 6px 14px rgb(18 20 43 / .12);
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+}
